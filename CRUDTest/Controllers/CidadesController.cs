@@ -52,6 +52,9 @@ namespace CRUDTest.Controllers
 
             var cidadeDto = _mapper.Map<CidadeResponseDto>(cidade);
 
+            var pessoas = await _context.Pessoas.Where(p => p.Id_Cidade == id).ToListAsync();
+            cidadeDto.Pessoas = _mapper.Map<List<PessoaListResponseDto>>(pessoas);
+
             if (cidade == null)
             {
                 return NotFound();
