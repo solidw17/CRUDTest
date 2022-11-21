@@ -1,6 +1,6 @@
 # CRUDTest
 
-Desenvolvimento de uma API Rest para o processo seletivo da Stefanini, com operações de consulta, criação, edição e deleção.
+Desenvolvimento de uma API Rest, com operações de consulta, criação, edição e deleção.
 
 Ferramentas e frameworks utilizados:
 - .NET CORE 6
